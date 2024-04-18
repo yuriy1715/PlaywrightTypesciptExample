@@ -1,0 +1,25 @@
+{
+  "name": "testExample",
+  "version": "1.0.0",
+  "description": "e2e tests",
+  "main": "index.js",
+  "scripts": {
+    "tests:env:dev": "TEST_ENV=dev npx playwright test",
+    "tests:env:dev:smoke": "TEST_ENV=dev npx playwright test --grep @smoke",
+    "tests:env:stage": "TEST_ENV=stage npx playwright test"
+  },
+  "keywords": [],
+  "author": "yurii",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.2"
+  },
+  "dependencies": {
+    "config": "3.3.7",
+    "dotenv": "16.0.2",
+    "got": "12.3.1",
+    "imap": "^0.8.19",
+    "js-yaml": "4.1.0"
+  }
+}
